@@ -1,4 +1,4 @@
-# AI Agent Manager & Raporlama Tesisatı
+# AI Agent Manager & Raporlama
 
 Bu proje, güçlü AI (Yapay Zeka) ajanları aracılığıyla yazılım projelerini, Issue tracking / Task Management sistemlerini (**Trello** / **Jira**), e-posta analizlerini, BT Destek operasyonlarını ve **Berqun** verimlilik raporlama işlemlerini tamamen otomatize eden çok kapsamlı bir teknoloji harikasıdır. 
 
