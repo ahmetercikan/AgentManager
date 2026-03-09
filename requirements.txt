@@ -1,0 +1,20 @@
+# Core AI & Agent Framework
+crewai>=0.28.0
+langchain-openai>=0.0.5
+openai>=1.12.0
+
+# API & HTTP
+requests>=2.31.0
+flask>=3.0.0  # For Webhooks
+
+# WhatsApp & Messaging (Approval Agent)
+twilio>=8.10.0
+
+# Environment Variables
+python-dotenv>=1.0.0
+
+# Optional: Web UI (Test Automation App)
+streamlit>=1.31.0
+pandas>=2.0.0
+matplotlib>=3.8.0
+

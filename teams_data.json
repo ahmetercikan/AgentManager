@@ -1,0 +1,1092 @@
+{
+  "16a142a8": {
+    "id": "16a142a8",
+    "name": "DevTeam",
+    "domain_id": "software_dev",
+    "domain_name": "Yazılım Geliştirme",
+    "agents": [
+      "analyst",
+      "architect",
+      "backend_dev",
+      "frontend_dev",
+      "qa_engineer"
+    ],
+    "agent_order": [
+      "analyst",
+      "architect",
+      "backend_dev",
+      "frontend_dev",
+      "qa_engineer"
+    ],
+    "status": "idle",
+    "created_at": "2026-02-18T09:26:04.813363",
+    "total_runs": 0,
+    "total_cost_usd": 0,
+    "agent_details": [
+      {
+        "id": "analyst",
+        "name": "İş Analisti",
+        "icon": "📋",
+        "role": "İş Analisti",
+        "goal": "Kullanıcı gereksinimlerini analiz edip teknik gereksinimlere dönüştürmek",
+        "backstory": "Sen deneyimli bir iş analistisin. Kullanıcının yazdığı genel istekleri alıp bunları teknik gereksinimlere, user story'lere ve kabul kriterlerine dönüştürüyorsun.",
+        "cost_per_hour": 45,
+        "category": "analysis"
+      },
+      {
+        "id": "architect",
+        "name": "Solution Architect",
+        "icon": "🏗️",
+        "role": "Solution Architect",
+        "goal": "Sistem mimarisini tasarlamak, teknoloji seçimleri yapmak ve teknik standartları belirlemek",
+        "backstory": "Sen deneyimli bir Solution Architect'sin. Proje gereksinimlerini alıp ölçeklenebilir, güvenli ve sürdürülebilir mimari tasarımlar oluşturuyorsun. Veritabanı şemaları, API tasarımları ve deployment stratejileri konusunda uzmansın.",
+        "cost_per_hour": 75,
+        "category": "architecture"
+      },
+      {
+        "id": "backend_dev",
+        "name": "Backend Developer",
+        "icon": "💾",
+        "role": "Backend Developer",
+        "goal": "Güvenli, performanslı ve ölçeklenebilir backend API'leri geliştirmek",
+        "backstory": "Sen uzman bir backend developer'sın. RESTful API'ler, veritabanı tasarımı, business logic ve server-side rendering konularında derin bilgiye sahipsin. Python, Node.js, Java gibi dillerde uzmansın.",
+        "cost_per_hour": 60,
+        "category": "development"
+      },
+      {
+        "id": "frontend_dev",
+        "name": "Frontend Developer",
+        "icon": "🎨",
+        "role": "Frontend Developer",
+        "goal": "Modern, responsive ve kullanıcı dostu arayüzler geliştirmek",
+        "backstory": "Sen uzman bir frontend developer'sın. React, Vue, Angular gibi modern framework'lerde ve CSS, responsive design, accessibility konularında derin bilgiye sahipsin.",
+        "cost_per_hour": 55,
+        "category": "development"
+      },
+      {
+        "id": "qa_engineer",
+        "name": "QA Engineer",
+        "icon": "🧪",
+        "role": "QA Engineer",
+        "goal": "Yazılım kalitesini sağlamak, test senaryoları oluşturmak ve bug'ları tespit etmek",
+        "backstory": "Sen deneyimli bir QA mühendisisin. Unit test, integration test, e2e test, performance test ve güvenlik testi konularında uzmansın.",
+        "cost_per_hour": 50,
+        "category": "testing"
+      }
+    ]
+  },
+  "7c6d07ed": {
+    "id": "7c6d07ed",
+    "name": "IKTeam",
+    "domain_id": "hr_recruitment",
+    "domain_name": "İK / Recruitment",
+    "agents": [
+      "job_poster",
+      "cv_screener",
+      "interview_prep"
+    ],
+    "agent_order": [
+      "job_poster",
+      "cv_screener",
+      "interview_prep"
+    ],
+    "status": "running",
+    "created_at": "2026-02-18T09:33:21.732724",
+    "total_runs": 2,
+    "total_cost_usd": 0,
+    "agent_details": [
+      {
+        "id": "job_poster",
+        "name": "İlan Yazarı",
+        "icon": "📝",
+        "role": "Job Posting Specialist",
+        "goal": "Dikkat çekici ve doğru adayları hedefleyen iş ilanları oluşturmak",
+        "backstory": "Sen İK ilanları konusunda uzman bir yazarsın. Pozisyon gereksinimlerini analiz edip, doğru adayları çekecek profesyonel ilanlar oluşturuyorsun.",
+        "cost_per_hour": 30,
+        "category": "content"
+      },
+      {
+        "id": "cv_screener",
+        "name": "CV Tarayıcı",
+        "icon": "📄",
+        "role": "CV Screening Specialist",
+        "goal": "CV'leri tarayıp en uygun adayları belirlemek",
+        "backstory": "Sen CV tarama konusunda uzman bir İK profesyonelisin. Adayların deneyim, beceri ve uygunluk açısından hızlı değerlendirmesini yapıyorsun.",
+        "cost_per_hour": 25,
+        "category": "screening"
+      },
+      {
+        "id": "interview_prep",
+        "name": "Mülakat Hazırlayıcı",
+        "icon": "🎤",
+        "role": "Interview Preparation Specialist",
+        "goal": "Pozisyona özel mülakat soruları ve değerlendirme kriterleri hazırlamak",
+        "backstory": "Sen mülakat süreçleri konusunda uzman bir İK danışmanısın. Pozisyona özel teknik ve behavioral mülakat soruları hazırlıyor, değerlendirme kriterleri oluşturuyorsun.",
+        "cost_per_hour": 35,
+        "category": "interview"
+      }
+    ]
+  },
+  "846f73de": {
+    "id": "846f73de",
+    "name": "DevTeamm",
+    "domain_id": "software_dev",
+    "domain_name": "Yazılım Geliştirme",
+    "agents": [
+      "analyst",
+      "architect",
+      "backend_dev",
+      "frontend_dev",
+      "qa_engineer"
+    ],
+    "agent_order": [
+      "analyst",
+      "architect",
+      "backend_dev",
+      "frontend_dev",
+      "qa_engineer"
+    ],
+    "status": "running",
+    "created_at": "2026-02-18T09:38:49.719398",
+    "total_runs": 1,
+    "total_cost_usd": 0,
+    "agent_details": [
+      {
+        "id": "analyst",
+        "name": "İş Analisti",
+        "icon": "📋",
+        "role": "İş Analisti",
+        "goal": "Kullanıcı gereksinimlerini analiz edip teknik gereksinimlere dönüştürmek",
+        "backstory": "Sen deneyimli bir iş analistisin. Kullanıcının yazdığı genel istekleri alıp bunları teknik gereksinimlere, user story'lere ve kabul kriterlerine dönüştürüyorsun.",
+        "cost_per_hour": 45,
+        "category": "analysis"
+      },
+      {
+        "id": "architect",
+        "name": "Solution Architect",
+        "icon": "🏗️",
+        "role": "Solution Architect",
+        "goal": "Sistem mimarisini tasarlamak, teknoloji seçimleri yapmak ve teknik standartları belirlemek",
+        "backstory": "Sen deneyimli bir Solution Architect'sin. Proje gereksinimlerini alıp ölçeklenebilir, güvenli ve sürdürülebilir mimari tasarımlar oluşturuyorsun. Veritabanı şemaları, API tasarımları ve deployment stratejileri konusunda uzmansın.",
+        "cost_per_hour": 75,
+        "category": "architecture"
+      },
+      {
+        "id": "backend_dev",
+        "name": "Backend Developer",
+        "icon": "💾",
+        "role": "Backend Developer",
+        "goal": "Güvenli, performanslı ve ölçeklenebilir backend API'leri geliştirmek",
+        "backstory": "Sen uzman bir backend developer'sın. RESTful API'ler, veritabanı tasarımı, business logic ve server-side rendering konularında derin bilgiye sahipsin. Python, Node.js, Java gibi dillerde uzmansın.",
+        "cost_per_hour": 60,
+        "category": "development"
+      },
+      {
+        "id": "frontend_dev",
+        "name": "Frontend Developer",
+        "icon": "🎨",
+        "role": "Frontend Developer",
+        "goal": "Modern, responsive ve kullanıcı dostu arayüzler geliştirmek",
+        "backstory": "Sen uzman bir frontend developer'sın. React, Vue, Angular gibi modern framework'lerde ve CSS, responsive design, accessibility konularında derin bilgiye sahipsin.",
+        "cost_per_hour": 55,
+        "category": "development"
+      },
+      {
+        "id": "qa_engineer",
+        "name": "QA Engineer",
+        "icon": "🧪",
+        "role": "QA Engineer",
+        "goal": "Yazılım kalitesini sağlamak, test senaryoları oluşturmak ve bug'ları tespit etmek",
+        "backstory": "Sen deneyimli bir QA mühendisisin. Unit test, integration test, e2e test, performance test ve güvenlik testi konularında uzmansın.",
+        "cost_per_hour": 50,
+        "category": "testing"
+      }
+    ]
+  },
+  "1e496f8a": {
+    "id": "1e496f8a",
+    "name": "DevTeamm",
+    "domain_id": null,
+    "domain_name": "",
+    "agents": [],
+    "agent_order": [],
+    "status": "idle",
+    "created_at": "2026-02-18T15:54:50.953949",
+    "total_runs": 0,
+    "total_cost_usd": 0
+  },
+  "d2fb3e30": {
+    "id": "d2fb3e30",
+    "name": "Takım-1771484760732",
+    "domain_id": "efficiency_analysis",
+    "domain_name": "Verimlilik Analizi",
+    "agents": [
+      "report_analyst",
+      "performance_tracker",
+      "mail_automation",
+      "trend_forecaster"
+    ],
+    "agent_order": [
+      "report_analyst",
+      "performance_tracker",
+      "mail_automation",
+      "trend_forecaster"
+    ],
+    "status": "idle",
+    "created_at": "2026-02-19T10:06:01.050817",
+    "total_runs": 0,
+    "total_cost_usd": 0,
+    "agent_details": [
+      {
+        "id": "report_analyst",
+        "name": "Berqun Rapor Analisti",
+        "icon": "📥",
+        "role": "Berqun Report Analyst",
+        "goal": "Berqun uygulamasından indirilen raporları analiz etmek, KPI'ları çıkarmak ve GMyL bazında performans verilerini yapılandırmak",
+        "backstory": "Sen Berqun uygulaması üzerinden raporlama konusunda uzman bir analistsin. İndirilen Excel/CSV raporlarını analiz ediyor, GMyL bazında verimlilik metriklerini çıkarıyor ve yapılandırılmış performans verileri oluşturuyorsun. Hangi GMyL'in hangi KPI'lardan ne puan aldığını takip ediyorsun.",
+        "cost_per_hour": 45,
+        "category": "analysis"
+      },
+      {
+        "id": "performance_tracker",
+        "name": "GMyL Performans Takipçisi",
+        "icon": "🧠",
+        "role": "GMyL Performance Memory Tracker",
+        "goal": "Her GMyL'in ay bazında performans puanlarını hafızasında tutmak, trendi izlemek ve karşılaştırmalı analiz yapmak",
+        "backstory": "Sen her GMyL'in aylık performans geçmişini takip eden bir hafıza uzmanısın. Önceki ayların puanlarını, trendleri ve değişimleri kaydediyorsun. Bir GMyL'in performansı düşüyorsa bunu tespit ediyor, iyileşme gösteriyorsa bunu not ediyorsun. Her rapor gönderiminde geçmiş performans verilerini referans olarak sunuyorsun.",
+        "cost_per_hour": 50,
+        "category": "analytics"
+      },
+      {
+        "id": "mail_automation",
+        "name": "Mail Otomasyon Uzmanı",
+        "icon": "📧",
+        "role": "Automated Mail & Report Distribution Specialist",
+        "goal": "Performans raporlarını ilgili GMyL'lere profesyonel mail formatında otomatik göndermek, geçmiş performans karşılaştırmalarını maile dahil etmek",
+        "backstory": "Sen kurumsal mail otomasyon konusunda uzman bir iletişim profesyonelisin. Her GMyL'e özel, kişiselleştirilmiş performans mailleri hazırlıyorsun. Maillerinde önceki aylarla karşılaştırma, puan değişimi ve genel değerlendirme bulunur. Profesyonel, saygılı ama net bir ton kullanırsın.",
+        "cost_per_hour": 40,
+        "category": "content"
+      },
+      {
+        "id": "trend_forecaster",
+        "name": "Trend & Tahmin Analisti",
+        "icon": "📈",
+        "role": "Efficiency Trend & Forecast Analyst",
+        "goal": "Verimlilik trendlerini analiz etmek, gelecek ay tahminleri oluşturmak ve iyileştirme önerileri sunmak",
+        "backstory": "Sen verimlilik trendleri konusunda uzman bir veri analistisin. GMyL bazında aylık performans trendlerini grafikleştiriyor, gelecek ay tahminleri yapıyor ve hangi alanlarda iyileştirme yapılabileceğine dair somut öneriler sunuyorsun.",
+        "cost_per_hour": 55,
+        "category": "analytics"
+      }
+    ]
+  },
+  "377115ef": {
+    "id": "377115ef",
+    "name": "Takım-1771489034264",
+    "domain_id": "efficiency_analysis",
+    "domain_name": "Verimlilik Analizi",
+    "agents": [
+      "report_analyst",
+      "performance_tracker",
+      "mail_automation"
+    ],
+    "agent_order": [
+      "report_analyst",
+      "performance_tracker",
+      "mail_automation"
+    ],
+    "status": "idle",
+    "created_at": "2026-02-19T11:17:14.579736",
+    "total_runs": 0,
+    "total_cost_usd": 0,
+    "agent_details": [
+      {
+        "id": "report_analyst",
+        "name": "Berqun Rapor Analisti",
+        "icon": "📥",
+        "role": "Berqun Report Analyst",
+        "goal": "Berqun uygulamasından indirilen raporları analiz etmek, KPI'ları çıkarmak ve GMyL bazında performans verilerini yapılandırmak",
+        "backstory": "Sen Berqun uygulaması üzerinden raporlama konusunda uzman bir analistsin. İndirilen Excel/CSV raporlarını analiz ediyor, GMyL bazında verimlilik metriklerini çıkarıyor ve yapılandırılmış performans verileri oluşturuyorsun. Hangi GMyL'in hangi KPI'lardan ne puan aldığını takip ediyorsun.",
+        "cost_per_hour": 45,
+        "category": "analysis"
+      },
+      {
+        "id": "performance_tracker",
+        "name": "GMyL Performans Takipçisi",
+        "icon": "🧠",
+        "role": "GMyL Performance Memory Tracker",
+        "goal": "Her GMyL'in ay bazında performans puanlarını hafızasında tutmak, trendi izlemek ve karşılaştırmalı analiz yapmak",
+        "backstory": "Sen her GMyL'in aylık performans geçmişini takip eden bir hafıza uzmanısın. Önceki ayların puanlarını, trendleri ve değişimleri kaydediyorsun. Bir GMyL'in performansı düşüyorsa bunu tespit ediyor, iyileşme gösteriyorsa bunu not ediyorsun. Her rapor gönderiminde geçmiş performans verilerini referans olarak sunuyorsun.",
+        "cost_per_hour": 50,
+        "category": "analytics"
+      },
+      {
+        "id": "mail_automation",
+        "name": "Mail Otomasyon Uzmanı",
+        "icon": "📧",
+        "role": "Automated Mail & Report Distribution Specialist",
+        "goal": "Performans raporlarını ilgili GMyL'lere profesyonel mail formatında otomatik göndermek, geçmiş performans karşılaştırmalarını maile dahil etmek",
+        "backstory": "Sen kurumsal mail otomasyon konusunda uzman bir iletişim profesyonelisin. Her GMyL'e özel, kişiselleştirilmiş performans mailleri hazırlıyorsun. Maillerinde önceki aylarla karşılaştırma, puan değişimi ve genel değerlendirme bulunur. Profesyonel, saygılı ama net bir ton kullanırsın.",
+        "cost_per_hour": 40,
+        "category": "content"
+      }
+    ]
+  },
+  "6c4fa922": {
+    "id": "6c4fa922",
+    "name": "DevTeammc",
+    "domain_id": "software_dev",
+    "domain_name": "Yazılım Geliştirme",
+    "agents": [
+      "analyst",
+      "architect",
+      "backend_dev",
+      "frontend_dev",
+      "qa_engineer"
+    ],
+    "agent_order": [
+      "analyst",
+      "architect",
+      "backend_dev",
+      "frontend_dev",
+      "qa_engineer"
+    ],
+    "status": "running",
+    "created_at": "2026-02-19T15:29:51.190007",
+    "total_runs": 1,
+    "total_cost_usd": 0,
+    "agent_details": [
+      {
+        "id": "analyst",
+        "name": "İş Analisti",
+        "icon": "📋",
+        "role": "İş Analisti",
+        "goal": "Kullanıcı gereksinimlerini analiz edip teknik gereksinimlere dönüştürmek",
+        "backstory": "Sen deneyimli bir iş analistisin. Kullanıcının yazdığı genel istekleri alıp bunları teknik gereksinimlere, user story'lere ve kabul kriterlerine dönüştürüyorsun.",
+        "cost_per_hour": 45,
+        "category": "analysis"
+      },
+      {
+        "id": "architect",
+        "name": "Solution Architect",
+        "icon": "🏗️",
+        "role": "Solution Architect",
+        "goal": "Sistem mimarisini tasarlamak, teknoloji seçimleri yapmak ve teknik standartları belirlemek",
+        "backstory": "Sen deneyimli bir Solution Architect'sin. Proje gereksinimlerini alıp ölçeklenebilir, güvenli ve sürdürülebilir mimari tasarımlar oluşturuyorsun. Veritabanı şemaları, API tasarımları ve deployment stratejileri konusunda uzmansın.",
+        "cost_per_hour": 75,
+        "category": "architecture"
+      },
+      {
+        "id": "backend_dev",
+        "name": "Backend Developer",
+        "icon": "💾",
+        "role": "Backend Developer",
+        "goal": "Güvenli, performanslı ve ölçeklenebilir backend API'leri geliştirmek",
+        "backstory": "Sen uzman bir backend developer'sın. RESTful API'ler, veritabanı tasarımı, business logic ve server-side rendering konularında derin bilgiye sahipsin. Python, Node.js, Java gibi dillerde uzmansın.",
+        "cost_per_hour": 60,
+        "category": "development"
+      },
+      {
+        "id": "frontend_dev",
+        "name": "Frontend Developer",
+        "icon": "🎨",
+        "role": "Frontend Developer",
+        "goal": "Modern, responsive ve kullanıcı dostu arayüzler geliştirmek",
+        "backstory": "Sen uzman bir frontend developer'sın. React, Vue, Angular gibi modern framework'lerde ve CSS, responsive design, accessibility konularında derin bilgiye sahipsin.",
+        "cost_per_hour": 55,
+        "category": "development"
+      },
+      {
+        "id": "qa_engineer",
+        "name": "QA Engineer",
+        "icon": "🧪",
+        "role": "QA Engineer",
+        "goal": "Yazılım kalitesini sağlamak, test senaryoları oluşturmak ve bug'ları tespit etmek",
+        "backstory": "Sen deneyimli bir QA mühendisisin. Unit test, integration test, e2e test, performance test ve güvenlik testi konularında uzmansın.",
+        "cost_per_hour": 50,
+        "category": "testing"
+      }
+    ]
+  },
+  "5a6ab4d6": {
+    "id": "5a6ab4d6",
+    "name": "DevTeamm",
+    "domain_id": "hr_recruitment",
+    "domain_name": "İK / Recruitment",
+    "agents": [],
+    "agent_order": [],
+    "status": "idle",
+    "created_at": "2026-02-20T11:49:53.556547",
+    "total_runs": 0,
+    "total_cost_usd": 0,
+    "agent_details": []
+  },
+  "4bad2c52": {
+    "id": "4bad2c52",
+    "name": "DevTeam",
+    "domain_id": "software_dev",
+    "domain_name": "Yazılım Geliştirme",
+    "agents": [],
+    "agent_order": [],
+    "status": "idle",
+    "created_at": "2026-02-23T09:03:18.584462",
+    "total_runs": 0,
+    "total_cost_usd": 0,
+    "agent_details": []
+  },
+  "4bd8b522": {
+    "id": "4bd8b522",
+    "name": "TEstTakım",
+    "domain_id": "software_dev",
+    "domain_name": "Yazılım Geliştirme",
+    "agents": [],
+    "agent_order": [],
+    "status": "idle",
+    "created_at": "2026-03-02T09:51:04.053466",
+    "total_runs": 1,
+    "total_cost_usd": 0,
+    "agent_details": []
+  },
+  "e81d6246": {
+    "id": "e81d6246",
+    "name": "testtttakım",
+    "domain_id": "software_dev",
+    "domain_name": "Yazılım Geliştirme",
+    "agents": [],
+    "agent_order": [],
+    "status": "idle",
+    "created_at": "2026-03-02T10:40:32.817801",
+    "total_runs": 0,
+    "total_cost_usd": 0,
+    "agent_details": []
+  },
+  "fb448bce": {
+    "id": "fb448bce",
+    "name": "testtttakım",
+    "domain_id": "software_dev",
+    "domain_name": "Yazılım Geliştirme",
+    "agents": [],
+    "agent_order": [],
+    "status": "idle",
+    "created_at": "2026-03-02T10:42:21.447043",
+    "total_runs": 0,
+    "total_cost_usd": 0,
+    "agent_details": []
+  },
+  "a5973cb1": {
+    "id": "a5973cb1",
+    "name": "DevTeammig",
+    "domain_id": "software_dev",
+    "domain_name": "Yazılım Geliştirme",
+    "agents": [
+      "analyst",
+      "backend_dev",
+      "frontend_dev",
+      "qa_engineer",
+      "architect"
+    ],
+    "agent_order": [
+      "analyst",
+      "backend_dev",
+      "frontend_dev",
+      "qa_engineer",
+      "architect"
+    ],
+    "status": "running",
+    "created_at": "2026-03-02T11:19:46.941058",
+    "total_runs": 1,
+    "total_cost_usd": 0,
+    "agent_details": [
+      {
+        "id": "analyst",
+        "name": "İş Analisti",
+        "icon": "📋",
+        "role": "İş Analisti",
+        "goal": "Kullanıcı gereksinimlerini analiz edip teknik gereksinimlere dönüştürmek",
+        "backstory": "Sen deneyimli bir iş analistisin. Kullanıcının yazdığı genel istekleri alıp bunları teknik gereksinimlere, user story'lere ve kabul kriterlerine dönüştürüyorsun.",
+        "skill": "is_analisti",
+        "cost_per_hour": 45,
+        "category": "analysis"
+      },
+      {
+        "id": "backend_dev",
+        "name": "Backend Developer",
+        "icon": "💾",
+        "role": "Backend Developer",
+        "goal": "Güvenli, performanslı ve ölçeklenebilir backend API'leri geliştirmek",
+        "backstory": "Sen uzman bir backend developer'sın. RESTful API'ler, veritabanı tasarımı, business logic ve server-side rendering konularında derin bilgiye sahipsin. Python, Node.js, Java gibi dillerde uzmansın.",
+        "skill": "backend_developer",
+        "cost_per_hour": 60,
+        "category": "development"
+      },
+      {
+        "id": "frontend_dev",
+        "name": "Frontend Developer",
+        "icon": "🎨",
+        "role": "Frontend Developer",
+        "goal": "Modern, responsive ve kullanıcı dostu arayüzler geliştirmek",
+        "backstory": "Sen uzman bir frontend developer'sın. React, Vue, Angular gibi modern framework'lerde ve CSS, responsive design, accessibility konularında derin bilgiye sahipsin.",
+        "skill": "frontend_design_pro",
+        "cost_per_hour": 55,
+        "category": "development"
+      },
+      {
+        "id": "qa_engineer",
+        "name": "QA Engineer",
+        "icon": "🧪",
+        "role": "QA Engineer",
+        "goal": "Yazılım kalitesini sağlamak, test senaryoları oluşturmak ve bug'ları tespit etmek",
+        "backstory": "Sen deneyimli bir QA mühendisisin. Unit test, integration test, e2e test, performance test ve güvenlik testi konularında uzmansın.",
+        "skill": "qa_engineer",
+        "cost_per_hour": 50,
+        "category": "testing"
+      },
+      {
+        "id": "architect",
+        "name": "Solution Architect",
+        "icon": "🏗️",
+        "role": "Solution Architect",
+        "goal": "Sistem mimarisini tasarlamak, teknoloji seçimleri yapmak ve teknik standartları belirlemek",
+        "backstory": "Sen deneyimli bir Solution Architect'sin. Proje gereksinimlerini alıp ölçeklenebilir, güvenli ve sürdürülebilir mimari tasarımlar oluşturuyorsun. Veritabanı şemaları, API tasarımları ve deployment stratejileri konusunda uzmansın.",
+        "skill": "solution_architect",
+        "cost_per_hour": 75,
+        "category": "architecture"
+      }
+    ]
+  },
+  "25cbb552": {
+    "id": "25cbb552",
+    "name": "OyuncakTeam",
+    "domain_id": "software_dev",
+    "domain_name": "Yazılım Geliştirme",
+    "agents": [
+      "analyst",
+      "architect",
+      "backend_dev",
+      "frontend_dev",
+      "qa_engineer"
+    ],
+    "agent_order": [
+      "analyst",
+      "architect",
+      "backend_dev",
+      "frontend_dev",
+      "qa_engineer"
+    ],
+    "status": "running",
+    "created_at": "2026-03-02T12:05:50.467227",
+    "total_runs": 1,
+    "total_cost_usd": 0,
+    "agent_details": [
+      {
+        "id": "analyst",
+        "name": "İş Analisti",
+        "icon": "📋",
+        "role": "İş Analisti",
+        "goal": "Kullanıcı gereksinimlerini analiz edip teknik gereksinimlere dönüştürmek",
+        "backstory": "Sen deneyimli bir iş analistisin. Kullanıcının yazdığı genel istekleri alıp bunları teknik gereksinimlere, user story'lere ve kabul kriterlerine dönüştürüyorsun.",
+        "skill": "is_analisti",
+        "cost_per_hour": 45,
+        "category": "analysis"
+      },
+      {
+        "id": "architect",
+        "name": "Solution Architect",
+        "icon": "🏗️",
+        "role": "Solution Architect",
+        "goal": "Sistem mimarisini tasarlamak, teknoloji seçimleri yapmak ve teknik standartları belirlemek",
+        "backstory": "Sen deneyimli bir Solution Architect'sin. Proje gereksinimlerini alıp ölçeklenebilir, güvenli ve sürdürülebilir mimari tasarımlar oluşturuyorsun. Veritabanı şemaları, API tasarımları ve deployment stratejileri konusunda uzmansın.",
+        "skill": "solution_architect",
+        "cost_per_hour": 75,
+        "category": "architecture"
+      },
+      {
+        "id": "backend_dev",
+        "name": "Backend Developer",
+        "icon": "💾",
+        "role": "Backend Developer",
+        "goal": "Güvenli, performanslı ve ölçeklenebilir backend API'leri geliştirmek",
+        "backstory": "Sen uzman bir backend developer'sın. RESTful API'ler, veritabanı tasarımı, business logic ve server-side rendering konularında derin bilgiye sahipsin. Python, Node.js, Java gibi dillerde uzmansın.",
+        "skill": "backend_developer",
+        "cost_per_hour": 60,
+        "category": "development"
+      },
+      {
+        "id": "frontend_dev",
+        "name": "Frontend Developer",
+        "icon": "🎨",
+        "role": "Frontend Developer",
+        "goal": "Modern, responsive ve kullanıcı dostu arayüzler geliştirmek",
+        "backstory": "Sen uzman bir frontend developer'sın. React, Vue, Angular gibi modern framework'lerde ve CSS, responsive design, accessibility konularında derin bilgiye sahipsin.",
+        "skill": "frontend_design_pro",
+        "cost_per_hour": 55,
+        "category": "development"
+      },
+      {
+        "id": "qa_engineer",
+        "name": "QA Engineer",
+        "icon": "🧪",
+        "role": "QA Engineer",
+        "goal": "Yazılım kalitesini sağlamak, test senaryoları oluşturmak ve bug'ları tespit etmek",
+        "backstory": "Sen deneyimli bir QA mühendisisin. Unit test, integration test, e2e test, performance test ve güvenlik testi konularında uzmansın.",
+        "skill": "qa_engineer",
+        "cost_per_hour": 50,
+        "category": "testing"
+      }
+    ]
+  },
+  "43e99a99": {
+    "id": "43e99a99",
+    "name": "Oyuncak2Team",
+    "domain_id": "software_dev",
+    "domain_name": "Yazılım Geliştirme",
+    "agents": [
+      "frontend_dev"
+    ],
+    "agent_order": [
+      "frontend_dev"
+    ],
+    "status": "running",
+    "created_at": "2026-03-02T12:14:11.879621",
+    "total_runs": 1,
+    "total_cost_usd": 0,
+    "agent_details": [
+      {
+        "id": "frontend_dev",
+        "name": "Frontend Developer",
+        "icon": "🎨",
+        "role": "Frontend Developer",
+        "goal": "Modern, responsive ve kullanıcı dostu arayüzler geliştirmek",
+        "backstory": "Sen uzman bir frontend developer'sın. React, Vue, Angular gibi modern framework'lerde ve CSS, responsive design, accessibility konularında derin bilgiye sahipsin.",
+        "skill": "frontend_design_pro",
+        "cost_per_hour": 55,
+        "category": "development"
+      }
+    ]
+  },
+  "32155b79": {
+    "id": "32155b79",
+    "name": "TEstTakımOyuncak",
+    "domain_id": "software_dev",
+    "domain_name": "Yazılım Geliştirme",
+    "agents": [
+      "frontend_dev"
+    ],
+    "agent_order": [
+      "frontend_dev"
+    ],
+    "status": "running",
+    "created_at": "2026-03-02T12:25:06.712572",
+    "total_runs": 1,
+    "total_cost_usd": 0,
+    "agent_details": [
+      {
+        "id": "frontend_dev",
+        "name": "Frontend Developer",
+        "icon": "🎨",
+        "role": "Frontend Developer",
+        "goal": "Modern, responsive ve kullanıcı dostu arayüzler geliştirmek",
+        "backstory": "Sen uzman bir frontend developer'sın. React, Vue, Angular gibi modern framework'lerde ve CSS, responsive design, accessibility konularında derin bilgiye sahipsin.",
+        "skill": "frontend_design_pro",
+        "cost_per_hour": 55,
+        "category": "development"
+      }
+    ]
+  },
+  "dcf612de": {
+    "id": "dcf612de",
+    "name": "OyunTeam",
+    "domain_id": "software_dev",
+    "domain_name": "Yazılım Geliştirme",
+    "agents": [
+      "frontend_dev"
+    ],
+    "agent_order": [
+      "frontend_dev"
+    ],
+    "status": "running",
+    "created_at": "2026-03-02T12:30:16.257723",
+    "total_runs": 1,
+    "total_cost_usd": 0,
+    "agent_details": [
+      {
+        "id": "frontend_dev",
+        "name": "Frontend Developer",
+        "icon": "🎨",
+        "role": "Frontend Developer",
+        "goal": "Modern, responsive ve kullanıcı dostu arayüzler geliştirmek",
+        "backstory": "Sen uzman bir frontend developer'sın. React, Vue, Angular gibi modern framework'lerde ve CSS, responsive design, accessibility konularında derin bilgiye sahipsin.",
+        "skill": "frontend_design_pro",
+        "cost_per_hour": 55,
+        "category": "development"
+      }
+    ]
+  },
+  "3d09d2c4": {
+    "id": "3d09d2c4",
+    "name": "Takım-1772444127595",
+    "domain_id": "software_dev",
+    "domain_name": "Yazılım Geliştirme",
+    "agents": [
+      "frontend_dev"
+    ],
+    "agent_order": [
+      "frontend_dev"
+    ],
+    "status": "running",
+    "created_at": "2026-03-02T12:35:27.596571",
+    "total_runs": 1,
+    "total_cost_usd": 0,
+    "agent_details": [
+      {
+        "id": "frontend_dev",
+        "name": "Frontend Developer",
+        "icon": "🎨",
+        "role": "Frontend Developer",
+        "goal": "Modern, responsive ve kullanıcı dostu arayüzler geliştirmek",
+        "backstory": "Sen uzman bir frontend developer'sın. React, Vue, Angular gibi modern framework'lerde ve CSS, responsive design, accessibility konularında derin bilgiye sahipsin.",
+        "skill": "frontend_design_pro",
+        "cost_per_hour": 55,
+        "category": "development"
+      }
+    ]
+  },
+  "f99ac905": {
+    "id": "f99ac905",
+    "name": "XTeam",
+    "domain_id": "software_dev",
+    "domain_name": "Yazılım Geliştirme",
+    "agents": [
+      "frontend_dev"
+    ],
+    "agent_order": [
+      "frontend_dev"
+    ],
+    "status": "running",
+    "created_at": "2026-03-02T14:16:03.040403",
+    "total_runs": 1,
+    "total_cost_usd": 0,
+    "agent_details": [
+      {
+        "id": "frontend_dev",
+        "name": "Frontend Developer",
+        "icon": "🎨",
+        "role": "Frontend Developer",
+        "goal": "Modern, responsive ve kullanıcı dostu arayüzler geliştirmek",
+        "backstory": "Sen uzman bir frontend developer'sın. React, Vue, Angular gibi modern framework'lerde ve CSS, responsive design, accessibility konularında derin bilgiye sahipsin.",
+        "skill": "frontend_design_pro",
+        "cost_per_hour": 55,
+        "category": "development"
+      }
+    ]
+  },
+  "0d7713e9": {
+    "id": "0d7713e9",
+    "name": "testttryu",
+    "domain_id": "software_dev",
+    "domain_name": "Yazılım Geliştirme",
+    "agents": [
+      "frontend_dev"
+    ],
+    "agent_order": [
+      "frontend_dev"
+    ],
+    "status": "running",
+    "created_at": "2026-03-02T16:08:35.808304",
+    "total_runs": 1,
+    "total_cost_usd": 0,
+    "agent_details": [
+      {
+        "id": "frontend_dev",
+        "name": "Frontend Developer",
+        "icon": "🎨",
+        "role": "Frontend Developer",
+        "goal": "Modern, responsive ve kullanıcı dostu arayüzler geliştirmek",
+        "backstory": "Sen uzman bir frontend developer'sın. React, Vue, Angular gibi modern framework'lerde ve CSS, responsive design, accessibility konularında derin bilgiye sahipsin.",
+        "skill": "frontend_design_pro",
+        "cost_per_hour": 55,
+        "category": "development"
+      }
+    ]
+  },
+  "3d481804": {
+    "id": "3d481804",
+    "name": "ercikanteam",
+    "domain_id": "software_dev",
+    "domain_name": "Yazılım Geliştirme",
+    "agents": [
+      "frontend_dev"
+    ],
+    "agent_order": [
+      "frontend_dev"
+    ],
+    "status": "running",
+    "created_at": "2026-03-02T20:27:04.320933",
+    "total_runs": 1,
+    "total_cost_usd": 0,
+    "agent_details": [
+      {
+        "id": "frontend_dev",
+        "name": "Frontend Developer",
+        "icon": "🎨",
+        "role": "Frontend Developer",
+        "goal": "Modern, responsive ve kullanıcı dostu arayüzler geliştirmek",
+        "backstory": "Sen uzman bir frontend developer'sın. React, Vue, Angular gibi modern framework'lerde ve CSS, responsive design, accessibility konularında derin bilgiye sahipsin.",
+        "skill": "frontend_design_pro",
+        "cost_per_hour": 55,
+        "category": "development"
+      }
+    ]
+  },
+  "780d4e48": {
+    "id": "780d4e48",
+    "name": "ttrrr",
+    "domain_id": "software_dev",
+    "domain_name": "Yazılım Geliştirme",
+    "agents": [
+      "frontend_dev"
+    ],
+    "agent_order": [
+      "frontend_dev"
+    ],
+    "status": "running",
+    "created_at": "2026-03-03T08:15:17.132027",
+    "total_runs": 1,
+    "total_cost_usd": 0,
+    "agent_details": [
+      {
+        "id": "frontend_dev",
+        "name": "Frontend Developer",
+        "icon": "🎨",
+        "role": "Frontend Developer",
+        "goal": "Modern, responsive ve kullanıcı dostu arayüzler geliştirmek",
+        "backstory": "Sen uzman bir frontend developer'sın. React, Vue, Angular gibi modern framework'lerde ve CSS, responsive design, accessibility konularında derin bilgiye sahipsin.",
+        "skill": "frontend_design_pro",
+        "cost_per_hour": 55,
+        "category": "development"
+      }
+    ]
+  },
+  "dd4bd845": {
+    "id": "dd4bd845",
+    "name": "lklk",
+    "domain_id": "software_dev",
+    "domain_name": "Yazılım Geliştirme",
+    "agents": [
+      "frontend_dev"
+    ],
+    "agent_order": [
+      "frontend_dev"
+    ],
+    "status": "running",
+    "created_at": "2026-03-03T08:23:35.342490",
+    "total_runs": 1,
+    "total_cost_usd": 0,
+    "agent_details": [
+      {
+        "id": "frontend_dev",
+        "name": "Frontend Developer",
+        "icon": "🎨",
+        "role": "Frontend Developer",
+        "goal": "Modern, responsive ve kullanıcı dostu arayüzler geliştirmek",
+        "backstory": "Sen uzman bir frontend developer'sın. React, Vue, Angular gibi modern framework'lerde ve CSS, responsive design, accessibility konularında derin bilgiye sahipsin.",
+        "skill": "frontend_design_pro",
+        "cost_per_hour": 55,
+        "category": "development"
+      }
+    ]
+  },
+  "1453aae0": {
+    "id": "1453aae0",
+    "name": "dfsdf",
+    "domain_id": "software_dev",
+    "domain_name": "Yazılım Geliştirme",
+    "agents": [
+      "frontend_dev"
+    ],
+    "agent_order": [
+      "frontend_dev"
+    ],
+    "status": "running",
+    "created_at": "2026-03-03T08:28:30.136540",
+    "total_runs": 1,
+    "total_cost_usd": 0,
+    "agent_details": [
+      {
+        "id": "frontend_dev",
+        "name": "Frontend Developer",
+        "icon": "🎨",
+        "role": "Frontend Developer",
+        "goal": "Modern, responsive ve kullanıcı dostu arayüzler geliştirmek",
+        "backstory": "Sen uzman bir frontend developer'sın. React, Vue, Angular gibi modern framework'lerde ve CSS, responsive design, accessibility konularında derin bilgiye sahipsin.",
+        "skill": "frontend_design_pro",
+        "cost_per_hour": 55,
+        "category": "development"
+      }
+    ]
+  },
+  "00a21f5f": {
+    "id": "00a21f5f",
+    "name": "Testtttfdfd",
+    "domain_id": "software_dev",
+    "domain_name": "Yazılım Geliştirme",
+    "agents": [
+      "frontend_dev",
+      "qa_engineer"
+    ],
+    "agent_order": [
+      "frontend_dev",
+      "qa_engineer"
+    ],
+    "status": "idle",
+    "created_at": "2026-03-03T09:37:43.074955",
+    "total_runs": 0,
+    "total_cost_usd": 0,
+    "agent_details": [
+      {
+        "id": "frontend_dev",
+        "name": "Frontend Developer",
+        "icon": "🎨",
+        "role": "Frontend Developer",
+        "goal": "Modern, responsive ve kullanıcı dostu arayüzler geliştirmek",
+        "backstory": "Sen uzman bir frontend developer'sın. React, Vue, Angular gibi modern framework'lerde ve CSS, responsive design, accessibility konularında derin bilgiye sahipsin.",
+        "skill": "frontend_design_pro",
+        "cost_per_hour": 55,
+        "category": "development"
+      },
+      {
+        "id": "qa_engineer",
+        "name": "QA Engineer",
+        "icon": "🧪",
+        "role": "QA Engineer",
+        "goal": "Yazılım kalitesini sağlamak, test senaryoları oluşturmak ve bug'ları tespit etmek",
+        "backstory": "Sen deneyimli bir QA mühendisisin. Unit test, integration test, e2e test, performance test ve güvenlik testi konularında uzmansın.",
+        "skill": "qa_engineer",
+        "cost_per_hour": 50,
+        "category": "testing"
+      }
+    ]
+  },
+  "cd6d42fa": {
+    "id": "cd6d42fa",
+    "name": "DevTeammm",
+    "domain_id": "software_dev",
+    "domain_name": "Yazılım Geliştirme",
+    "agents": [
+      "analyst",
+      "architect",
+      "backend_dev",
+      "frontend_dev",
+      "qa_engineer"
+    ],
+    "agent_order": [
+      "analyst",
+      "architect",
+      "backend_dev",
+      "frontend_dev",
+      "qa_engineer"
+    ],
+    "status": "running",
+    "created_at": "2026-03-05T14:15:47.193322",
+    "total_runs": 1,
+    "total_cost_usd": 0,
+    "agent_details": [
+      {
+        "id": "analyst",
+        "name": "İş Analisti",
+        "icon": "📋",
+        "role": "İş Analisti",
+        "goal": "Kullanıcı gereksinimlerini analiz edip teknik gereksinimlere dönüştürmek",
+        "backstory": "Sen deneyimli bir iş analistisin. Kullanıcının yazdığı genel istekleri alıp bunları teknik gereksinimlere, user story'lere ve kabul kriterlerine dönüştürüyorsun.",
+        "skill": "is_analisti",
+        "cost_per_hour": 45,
+        "category": "analysis"
+      },
+      {
+        "id": "architect",
+        "name": "Solution Architect",
+        "icon": "🏗️",
+        "role": "Solution Architect",
+        "goal": "Sistem mimarisini tasarlamak, teknoloji seçimleri yapmak ve teknik standartları belirlemek",
+        "backstory": "Sen deneyimli bir Solution Architect'sin. Proje gereksinimlerini alıp ölçeklenebilir, güvenli ve sürdürülebilir mimari tasarımlar oluşturuyorsun. Veritabanı şemaları, API tasarımları ve deployment stratejileri konusunda uzmansın.",
+        "skill": "solution_architect",
+        "cost_per_hour": 75,
+        "category": "architecture"
+      },
+      {
+        "id": "backend_dev",
+        "name": "Backend Developer",
+        "icon": "💾",
+        "role": "Backend Developer",
+        "goal": "Güvenli, performanslı ve ölçeklenebilir backend API'leri geliştirmek",
+        "backstory": "Sen uzman bir backend developer'sın. RESTful API'ler, veritabanı tasarımı, business logic ve server-side rendering konularında derin bilgiye sahipsin. Python, Node.js, Java gibi dillerde uzmansın.",
+        "skill": "backend_developer",
+        "cost_per_hour": 60,
+        "category": "development"
+      },
+      {
+        "id": "frontend_dev",
+        "name": "Frontend Developer",
+        "icon": "🎨",
+        "role": "Frontend Developer",
+        "goal": "Modern, responsive ve kullanıcı dostu arayüzler geliştirmek",
+        "backstory": "Sen uzman bir frontend developer'sın. React, Vue, Angular gibi modern framework'lerde ve CSS, responsive design, accessibility konularında derin bilgiye sahipsin.",
+        "skill": "frontend_design_pro",
+        "cost_per_hour": 55,
+        "category": "development"
+      },
+      {
+        "id": "qa_engineer",
+        "name": "QA Engineer",
+        "icon": "🧪",
+        "role": "QA Engineer",
+        "goal": "Yazılım kalitesini sağlamak, test senaryoları oluşturmak ve bug'ları tespit etmek",
+        "backstory": "Sen deneyimli bir QA mühendisisin. Unit test, integration test, e2e test, performance test ve güvenlik testi konularında uzmansın.",
+        "skill": "qa_engineer",
+        "cost_per_hour": 50,
+        "category": "testing"
+      }
+    ]
+  },
+  "8edb1b06": {
+    "id": "8edb1b06",
+    "name": "TestTeamm",
+    "domain_id": "software_dev",
+    "domain_name": "Yazılım Geliştirme",
+    "agents": [
+      "frontend_dev",
+      "qa_engineer"
+    ],
+    "agent_order": [
+      "frontend_dev",
+      "qa_engineer"
+    ],
+    "status": "idle",
+    "created_at": "2026-03-05T15:05:11.413845",
+    "total_runs": 0,
+    "total_cost_usd": 0,
+    "agent_details": [
+      {
+        "id": "frontend_dev",
+        "name": "Frontend Developer",
+        "icon": "🎨",
+        "role": "Frontend Developer",
+        "goal": "Modern, responsive ve kullanıcı dostu arayüzler geliştirmek",
+        "backstory": "Sen uzman bir frontend developer'sın. React, Vue, Angular gibi modern framework'lerde ve CSS, responsive design, accessibility konularında derin bilgiye sahipsin.",
+        "skill": "frontend_design_pro",
+        "cost_per_hour": 55,
+        "category": "development"
+      },
+      {
+        "id": "qa_engineer",
+        "name": "QA Engineer",
+        "icon": "🧪",
+        "role": "QA Engineer",
+        "goal": "Yazılım kalitesini sağlamak, test senaryoları oluşturmak ve bug'ları tespit etmek",
+        "backstory": "Sen deneyimli bir QA mühendisisin. Unit test, integration test, e2e test, performance test ve güvenlik testi konularında uzmansın.",
+        "skill": "qa_engineer",
+        "cost_per_hour": 50,
+        "category": "testing"
+      }
+    ]
+  }
+}

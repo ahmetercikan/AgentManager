@@ -1,0 +1,182 @@
+WEB API GELIŞTIRME - PROJE RAPORU
+============================================================
+
+📊 Proje: Web API Geliştirme
+📝 Açıklama: RESTful API ile kullanıcı yönetim sistemi
+💻 Dil: Python
+📄 Dosya: user_api.py
+
+📊 OLUŞTURULAN JIRA TASK'LARI:
+
+============================================================
+
+### 1. Test Senaryoları Listesi
+
+#### **Fonksiyonel Testler**
+
+- **Test ID:** TS-001  
+  **Test Adımları:**  
+  1. `POST /users/` endpoint'ine geçerli kullanıcı bilgileri gönderin.  
+  **Beklenen Sonuç:** Kullanıcı başarıyla oluşturulmalı ve 200 OK döndürmelidir.  
+  **Kod İncelemesi Sonucu:** İşlevsellik doğru görünüyor.  
+  **Potansiyel Hatalar:** Kullanıcı adı veya email daha önce kayıtlıysa hata alınıyor, bu doğru.
+
+- **Test ID:** TS-002  
+  **Test Adımları:**  
+  1. `GET /users/{user_id}` endpoint'ine mevcut bir user_id ile geçerli bir kullanıcı bilgisi gönderin.  
+  **Beklenen Sonuç:** İlgili kullanıcı bilgileri döndürülmelidir.  
+  **Kod İncelemesi Sonucu:** Kullanıcı bilgileri doğru bir şekilde sorgulanıyor.  
+  **Potansiyel Hatalar:** Kullanıcı bulunamazsa 404 hatası döndürülüyor, bu uygun.
+
+- **Test ID:** TS-003  
+  **Test Adımları:**  
+  1. `PUT /users/{user_id}` endpoint’ine geçerli kullanıcı bilgileri ve mevcut bir user_id gönderin.  
+  **Beklenen Sonuç:** Kullanıcı bilgileri güncellenmeli ve 200 OK döndürmelidir.  
+  **Kod İncelemesi Sonucu:** Güncelleme işlevi düzgün çalışıyor.  
+  **Potansiyel Hatalar:** Kullanıcı olmadığı durumda 404 hatası döndürülüyor, bu hatalı.
+
+- **Test ID:** TS-004  
+  **Test Adımları:**  
+  1. `DELETE /users/{user_id}` endpoint'inde mevcut bir user_id ile kullanıcı silme isteği gönderin.  
+  **Beklenen Sonuç:** Kullanıcı silinmeli ve 200 OK döndürmelidir.  
+  **Kod İncelemesi Sonucu:** Silme işlevi beklendiği gibi çalışıyor.  
+  **Potansiyel Hatalar:** Kullanıcı bulunamazsa 404 hatası döndürüyor, bu uygun.
+
+- **Test ID:** TS-005  
+  **Test Adımları:**  
+  1. `POST /token` endpoint'ine geçerli kullanıcı bilgileriyle oturum açma isteği gönderin.  
+  **Beklenen Sonuç:** JWT token döndürülmelidir.  
+  **Kod İncelemesi Sonucu:** JWT oluşturma doğru çalışıyor.  
+  **Potansiyel Hatalar:** Hatalı kullanıcı adı veya şifre için 401 hatası döndürülüyor, bu uygun.
+
+#### **Edge Case'ler**
+
+- **Test ID:** TS-006  
+  **Test Adımları:**  
+  1. `POST /users/` endpoint'ine boş kullanıcı bilgileri gönderin.  
+  **Beklenen Sonuç:** Hata mesajı döndürmelidir.  
+  **Kod İncelemesi Sonucu:** Validation hatası uygun şekilde ele alınıyor.  
+  **Potansiyel Hatalar:** Kullanıcı bilgilerindeki her alanın doğruluğu kontrol edilmeli.
+
+- **Test ID:** TS-007  
+  **Test Adımları:**  
+  1. `GET /users/{user_id}` endpoint'ine var olmayan bir user_id gönderin.  
+  **Beklenen Sonuç:** 404 Not Found hatası döndürmelidir.  
+  **Kod İncelemesi Sonucu:** Hata yönetimi yerinde.  
+  **Potansiyel Hatalar:** Aynı kullanıcı id üzerinden birden fazla istek yapılmamalıdır.
+
+#### **Hata Durumları**
+
+- **Test ID:** TS-008  
+  **Test Adımları:**  
+  1. `POST /users/` endpoint’ine önceden var olan bir kullanıcı adı ile kayıt isteği gönderin.  
+  **Beklenen Sonuç:** 400 Bad Request hatası döndürmelidir.  
+  **Kod İncelemesi Sonucu:** Uygun hata mesajı döndürülüyor.  
+  **Potansiyel Hatalar:** Kullanıcı adı kontrolü düzgün çalışıyor.
+
+- **Test ID:** TS-009  
+  **Test Adımları:**  
+  1. `PUT /users/{user_id}` endpoint'ine geçerli bir user_id gönderin, ancak geçersiz kullanıcı bilgileri gönderin.  
+  **Beklenen Sonuç:** 400 Bad Request hatası döndürmelidir.  
+  **Kod İncelemesi Sonucu:** Hata yönetimi düzgün görünüyor.  
+  **Potansiyel Hatalar:** Kullanıcı bilgileri doğruluğu kontrol edilmeli.
+
+#### **Performans Testleri**
+
+- **Test ID:** TS-010  
+  **Test Adımları:**  
+  1. `POST /users/` endpoint'ine 1000 kişilik kullanıcı verisi göndermek.  
+  **Beklenen Sonuç:** 200 OK ile kullanıcı bilgilerinin başarıyla kaydedilmesi.  
+  **Kod İncelemesi Sonucu:** Performans yeterli, ancak yükseklik ve altında test yapılmalı.  
+  **Potansiyel Hatalar:** Veri tabanı bağlantısı sorunları olabilir.
+
+#### **Güvenlik Testleri**
+
+- **Test ID:** TS-011  
+  **Test Adımları:**  
+  1. `POST /users/` endpoint'ine SQL injection'ı test eden bir payload gönderin.  
+  **Beklenen Sonuç:** Hatalı kullanıcının veritabanına erişimi olmamalı.  
+  **Kod İncelemesi Sonucu:** ORM kullanımı SQL Injection'a karşı koruma sağlıyor.  
+  **Potansiyel Hatalar:** Ekstra testler yapılmalı.
+
+- **Test ID:** TS-012  
+  **Test Adımları:**  
+  1. `GET /users/{user_id}` endpoint'ine XSS içeren bir payload gönderin.  
+  **Beklenen Sonuç:** XSS koruma sağlandığı görülmeli.  
+  **Kod İncelemesi Sonucu:** Sanitize işlemleri yeterli görünmüyor.  
+  **Potansiyel Hatalar:** Çıkış verileri sanitize edilmeli.
+
+#### **Entegrasyon Testleri**
+
+- **Test ID:** TS-013  
+  **Test Adımları:**  
+  1. Tüm CRUD işlemlerini arka planda test etmek.  
+  **Beklenen Sonuç:** Hiçbir sorun yaşamadan tüm işlemler başarılı olmalı.  
+  **Kod İncelemesi Sonucu:** Tüm işlemler entegrasyon testine uygun.  
+  **Potansiyel Hatalar:** API endpoint'leri arasında gecikmeler veya veri tutarsızlığı olmadığından emin olunmalı.
+
+---
+
+### 2. Detaylı Kod İnceleme Raporu
+
+#### **Kod Kalitesi ve Okunabilirlik**
+- Kod genel olarak okunabilir, fonksiyonların isimleri ve amaçları açık. Yorumlar eklenebilir.
+
+#### **Best Practices Uyumu**
+- Kullanıcı verilerinin doğrulanması ve şifrelerin hash'lenmesi iyi bir uygulama, ancak JWT'nin token yönetimi için `iat` ve `exp` gibi alanların eklenmesi gerektiği düşünülmekte.
+
+#### **Performans Optimizasyonu**
+- Yüksek kullanıcı taleplerine karşı sistemin tepki süresini ölçmek için yük testleri yapılmalı. ORM kullanımının getirdiği bazı performans zafiyetleri göz önünde bulundurulmalı.
+
+#### **Hata Yönetimi**
+- Hata yönetimi genel olarak doğru şekilde ele alınmış; geçersiz veriler için kullanıcı dostu hata mesajları sağlanmalı.
+
+#### **Güvenlik Açıkları**
+- POTANSYEL AÇIKLAR: Hard-coded secret key, yetersiz kullanıcı girişi doğrulama ve XSS - CSRF önlemlerinin eksikliği var.
+
+#### **Eksik Özellikler**
+- Rol tabanlı erişim kontrolü ve kritik hatalar için bir logging mekanizması eksiklikleri mevcut.
+
+#### **Potansiyel Bug'lar**
+1. Değişken isimlendirmelerinde tutarsızlıklar.
+2. Kullanıcı güncelleme sırasında mevcut email adresinin doğrulanmaması.
+  
+#### **Refactoring Önerileri**
+- Veri girişlerinde asenkron işlemler yapılabilir. ORM ve API kullanımında daha fazla ayrıştırma yapabilir.
+
+---
+
+### 3. Bulunan Hatalar/Eksikler 
+
+1. **Hardcoded Secret Key**
+   - Çözüm: Gizli anahtar için .env veya güvenlik yönetim sistemleri kullanılmalı.
+
+2. **Kullanıcı girişi doğrulaması yetersiz**
+   - Çözüm: Kullanıcı rolü ve yetkilendirme kontrolleri geliştirilmelidir.
+
+3. **XSS - CSRF Koruması eksik**
+   - Çözüm: Gelişmiş veri sanitize işlemleri yapılmalı ve CSRF tokenları eklenmeli.
+
+---
+
+### 4. Güvenlik Analizi
+
+- Genel olarak güvenlik riskleri mevcut ancak yönetim uygun bir seviyede. İyileştirmelerin eklenmesiyle güvenlik seviyesi artırılacaktır.
+
+---
+
+### 5. Performans Değerlendirmesi
+
+- Performans testleri yapılmalı. API endpoint'lerine yapılan istek sayısının yüksek olması durumunda süre ölçümleri ve optimizasyon stratejileri belirlenmeli.
+
+---
+
+### 6. İyileştirme Önerileri
+
+1. **Environment Configuration**: Hardcoded değerlerin kaldırılması ve .env kullanılması.
+2. **Logging**: API isteklerini kayıt altına alacak bir logging sistemi entegre edilmeli.
+3. **Rate Limiting**: Kullanıcı isteklerini sınırlandırarak potansiyel DoS saldırılarına karşı önlem alınmalı.
+4. **Daha Güçlü Input Validation**: Daha fazla input doğrulama ve hata kontrolü sağlanmalıdır.
+5. **Hedeftlenmiş güvenlik güncellemeleri yapılmalı**: Kullanılan third-party kütüphaneler için güvenlik taramaları gerçekleştirilmelidir.
+
+Bu önerilerin uygulanmasıyla projenin kalitesi artırılabilir ve olası hatalar minimize edilebilir.

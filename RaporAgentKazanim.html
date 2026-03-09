@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentic AI - Verimlilik Raporu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .progress-animate {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: .7; }
+        }
+        .ai-glow {
+            box-shadow: 0 0 15px rgba(79, 70, 229, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 p-4 md:p-8">
+
+    <div class="max-w-5xl mx-auto">
+        <!-- Header -->
+        <header class="mb-8 flex flex-col md:group md:flex-row md:items-center justify-between gap-4">
+            <div>
+                <div class="flex items-center gap-2 mb-1">
+                    <span class="bg-indigo-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full tracking-widest uppercase ai-glow">AI Powered</span>
+                </div>
+                <h1 class="text-3xl font-extrabold text-indigo-950 tracking-tight">Agentic AI - Verimlilik Raporu</h1>
+                <p class="text-slate-500 mt-1 flex items-center gap-2">
+                    <i data-lucide="sparkles" class="w-4 h-4 text-indigo-500"></i> Otonom İş Akışı Analizi
+                </p>
+            </div>
+            <div class="bg-green-100 text-green-700 px-4 py-2 rounded-full font-semibold flex items-center gap-2 self-start md:self-center border border-green-200">
+                <i data-lucide="zap" class="w-5 h-5"></i> %7.333 Verimlilik Artışı
+            </div>
+        </header>
+
+        <!-- Ana İstatistikler -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 transition-all hover:shadow-md">
+                <div class="bg-red-50 w-12 h-12 rounded-xl flex items-center justify-center text-red-600 mb-4">
+                    <i data-lucide="clock" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-slate-500 text-sm font-medium uppercase tracking-wider">Eski Süre (Manuel)</h3>
+                <p class="text-3xl font-bold mt-1 text-slate-800">132 Dakika</p>
+                <p class="text-xs text-slate-400 mt-2 font-medium">6 Ekip x 22 dk</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 transition-all hover:shadow-lg border-l-4 border-l-indigo-600 relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-2 opacity-10">
+                    <i data-lucide="cpu" class="w-12 h-12"></i>
+                </div>
+                <div class="bg-indigo-50 w-12 h-12 rounded-xl flex items-center justify-center text-indigo-600 mb-4">
+                    <i data-lucide="bot" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-slate-500 text-sm font-medium uppercase tracking-wider">Agentic AI Süresi</h3>
+                <p class="text-3xl font-bold mt-1 text-indigo-900">108 Saniye</p>
+                <p class="text-xs text-indigo-500 mt-2 font-bold italic">Otonom İşleme Aktif</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 transition-all hover:shadow-md border-l-4 border-l-green-500">
+                <div class="bg-green-50 w-12 h-12 rounded-xl flex items-center justify-center text-green-600 mb-4">
+                    <i data-lucide="trending-up" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-slate-500 text-sm font-medium uppercase tracking-wider">Haftalık Kazanım</h3>
+                <p class="text-3xl font-bold mt-1 text-slate-800">130.2 Dakika</p>
+                <p class="text-xs text-green-600 font-medium mt-2">Kazanılan zaman: +2.1 Saat/Hafta</p>
+            </div>
+        </div>
+
+        <!-- Görsel Karşılaştırma -->
+        <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 mb-8 relative">
+            <h2 class="text-xl font-bold mb-6 flex items-center gap-2 text-slate-800">
+                <i data-lucide="activity" class="w-5 h-5 text-indigo-600"></i> Performans Karşılaştırması
+            </h2>
+            
+            <div class="space-y-8">
+                <!-- Manuel Bar -->
+                <div>
+                    <div class="flex justify-between mb-2 items-end">
+                        <span class="font-semibold text-slate-700">Geleneksel Manuel Yöntem</span>
+                        <span class="text-slate-500 text-sm">132 dk</span>
+                    </div>
+                    <div class="w-full bg-slate-100 h-8 rounded-full overflow-hidden">
+                        <div class="h-full bg-slate-400 rounded-full w-full"></div>
+                    </div>
+                </div>
+
+                <!-- Otomasyon Bar -->
+                <div>
+                    <div class="flex justify-between mb-2 items-end">
+                        <span class="font-bold text-indigo-700 flex items-center gap-1">
+                            <i data-lucide="cpu" class="w-4 h-4"></i> Agentic AI Workflow
+                        </span>
+                        <span class="text-indigo-600 text-sm font-bold">1.8 dk (108 sn)</span>
+                    </div>
+                    <div class="w-full bg-slate-100 h-8 rounded-full overflow-hidden flex items-center border border-indigo-100">
+                        <div class="h-full bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-full progress-animate" style="width: 1.5%"></div>
+                        <span class="ml-2 text-[10px] font-black text-indigo-600 uppercase tracking-tighter">Otonom Hız</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alt Bölüm: Ekipler ve Yıllık Projeksiyon -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Ekip Listesi -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                <h3 class="text-lg font-bold mb-4 flex items-center gap-2 text-slate-700">
+                    <i data-lucide="users" class="w-5 h-5 text-indigo-500"></i> Raporu Hazırlanan Ekipler
+                </h3>
+                <div class="divide-y divide-slate-100" id="team-list">
+                    <div class="py-3 flex justify-between items-center group">
+                        <div>
+                            <p class="font-medium text-slate-800">Temel Bankacılık</p>
+                            <p class="text-xs text-slate-500">Mustafa Yıldırım</p>
+                        </div>
+                        <span class="px-2 py-1 bg-indigo-50 text-indigo-600 text-[10px] font-bold rounded">AI ANALYZED</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-center group">
+                        <div>
+                            <p class="font-medium text-slate-800">Temel Bankacılık</p>
+                            <p class="text-xs text-slate-500">Belkay Sarataş</p>
+                        </div>
+                        <span class="px-2 py-1 bg-indigo-50 text-indigo-600 text-[10px] font-bold rounded">AI ANALYZED</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-center group">
+                        <p class="font-medium text-slate-800">AndroidPos</p>
+                        <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i>
+                    </div>
+                    <div class="py-3 flex justify-between items-center group">
+                        <p class="font-medium text-slate-800">SoftPos</p>
+                        <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i>
+                    </div>
+                    <div class="py-3 flex justify-between items-center group">
+                        <p class="font-medium text-slate-800">PF</p>
+                        <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i>
+                    </div>
+                    <div class="py-3 flex justify-between items-center group">
+                        <p class="font-medium text-slate-800">Transit</p>
+                        <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Yıllık Etki -->
+            <div class="bg-gradient-to-br from-indigo-700 to-indigo-900 p-6 rounded-2xl text-white shadow-xl relative overflow-hidden">
+                <div class="absolute -right-4 -bottom-4 opacity-10">
+                    <i data-lucide="bot" class="w-32 h-32"></i>
+                </div>
+                <div class="flex justify-between items-start mb-6">
+                    <h3 class="text-lg font-bold">Agentic AI Etki Projeksiyonu</h3>
+                    <div class="p-2 bg-white/20 rounded-lg backdrop-blur-sm">
+                        <i data-lucide="zap" class="w-6 h-6"></i>
+                    </div>
+                </div>
+                
+                <div class="space-y-6">
+                    <div>
+                        <p class="text-indigo-100 text-sm uppercase tracking-wide opacity-80">Toplam Yıllık Tasarruf</p>
+                        <p class="text-4xl font-black mt-1">~113 Saat</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-4 pt-4 border-t border-white/10">
+                        <div>
+                            <p class="text-xs text-indigo-100 opacity-70">Otonom Verimlilik</p>
+                            <p class="text-xl font-bold">73.3x Daha Hızlı</p>
+                        </div>
+                        <div>
+                            <p class="text-xs text-indigo-100 opacity-70">İnsan Kaynağı Tasarrufu</p>
+                            <p class="text-xl font-bold">14.1 Gün</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-indigo-950/40 p-4 rounded-xl text-sm border border-white/10 italic">
+                        "Agentic AI ajanları, manuel veri toplama ve analiz süreçlerini otonom bir döngüye çevirerek hata payını minimize etti."
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Lucide ikonlarını başlat
+        lucide.createIcons();
+    </script>
+</body>
+</html>
