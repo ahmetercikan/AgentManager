@@ -69,17 +69,43 @@ Projede kendi yeteneği ve **.agent/skills** klasöründe belirtilmiş sistem pr
 
 ---
 
-## 🚀 Hızlı Başlangıç
+## 🚀 Projeyi Kurma ve Ayağa Kaldırma Rehberi
 
-### 1. Kurulum Mimarisi
-Gerekli kütüphaneleri sisteminize yükleyin:
+Sistemi baştan sonra ayağa kaldırmak için aşağıdaki adımları sırasıyla uygulayın:
+
+### 1. Repoyu Klonlayın
+Projeyi bilgisayarınıza indirin ve dizine geçin:
+```bash
+git clone https://github.com/ahmetercikan/AgentManager.git
+cd AgentManager
+```
+
+### 2. Sanal Ortam (Virtual Environment) Oluşturun
+Proje bağımlılıklarının çakışmasını önlemek için bir sanal ortam oluşturup aktif edin:
+
+**Windows Command Prompt / PowerShell:**
+```bash
+python -m venv venv
+.\venv\Scripts\activate
+```
+
+**macOS / Linux:**
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 3. Gerekli Kütüphaneleri Yükleyin
+Tüm ajanların, Trello entegrasyonlarının ve Berqun otomasyonlarının çalışması için paketleri yükleyin:
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Environment Variables (Çevresel Değişkenler)
-Projenizi ayaklandırmadan önce API ve token'larınızı sistem değişkenlerinize kaydetmeniz gerekir.
-Önemli olanlar:
+### 4. Sistem Çevresel Değişkenlerini (Environment Variables) Ayarlayın
+Ajanların harici API'lere bağlanabilmesi için bazı anahtarlara ihtiyacı vardır. 
+Projenin ana dizininde bir `.env` dosyası oluşturun (eğer yoksa) veya bu değişkenleri sisteminize global olarak ekleyin:
+
+**Önemli Anahtarlar (`.env` dosya örneği):**
 ```env
 OPENAI_API_KEY=your_openai_api_key
 TRELLO_TOKEN=your_trello_token
@@ -91,7 +117,7 @@ TWILIO_ACCOUNT_SID=twilio_sid
 TWILIO_AUTH_TOKEN=twilio_token
 WHATSAPP_TO_NUMBER=whatsapp_receiver
 ```
-*(Güvenlik sebebiyle anahtarlar asla `.py` veya `.env` içerisinde repoya commitlenmemelidir!)*
+*(GitHub'a gizli anahtarlarınız sızmasın diye projede şuan secret key taraması yapılmıştır. Kendi keylerinizi local inizde yerleştirin.)*
 
 ### 3. Kullanım Modları (Nasıl Başlatılır?)
 
