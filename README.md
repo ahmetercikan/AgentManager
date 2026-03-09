@@ -119,7 +119,14 @@ WHATSAPP_TO_NUMBER=whatsapp_receiver
 ```
 *(GitHub'a gizli anahtarlarınız sızmasın diye projede şuan secret key taraması yapılmıştır. Kendi keylerinizi local inizde yerleştirin.)*
 
-### 3. Kullanım Modları (Nasıl Başlatılır?)
+### 5. Projeyi (Frontend ve Backend) Ayağa Kaldırmak
+Projedeki tüm ajanların, API'nin ve arayüzün (Frontend) birlikte ayağa kalkması için projenin ana dosyasını çalıştırmalısınız:
+```bash
+python agent_manager.py
+```
+Bu komut sonrası oluşturulmuş React frontend arayüzü ve Flask backend sistemi aynı anda çalışmaya başlayacaktır.
+
+### 6. Kullanım Modları (Detaylı Servisleri Başlatmak)
 
 #### A) Trello Otonom AI Ekibini Çalıştırmak
 Siz sadece Trello tahtasına (Board) görev kartları eklersiniz, gerisini **Orchestrator V3** halleder. AI sizin için kodu, tasarımı ve gereksinimleri çıkartarak Trello kartını tamamlar.
